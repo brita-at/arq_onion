@@ -1,12 +1,9 @@
 from flask import jsonify, request
 from flask_pymongo import PyMongo
-from bson import json_util
 
 from aplicacion import app
 from servicios.prediccion import predict
 from dominio.data_base import get_latest_data
-
-mongo = PyMongo(app)
 
 @app.route('/predecir', methods=['GET'])
 def dataarray(): 

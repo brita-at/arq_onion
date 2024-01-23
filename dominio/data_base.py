@@ -1,4 +1,3 @@
-# database.py
 from flask_pymongo import PyMongo
 from bson import json_util
 from aplicacion import app
