@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-app.config['MONGO_URI'] = os.getenv('MONGO_URL') 
+app.config['MONGO_URI'] = 'mongodb+srv://baironbd:Baironbd1@cluster0.7b4ba4z.mongodb.net/DatosEscobilla?retryWrites=true&w=majority'
 mongo = PyMongo(app)
 CORS(app)
 
