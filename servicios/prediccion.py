@@ -13,7 +13,7 @@ def predict(doc_dict):
         doc_dict['SEVERIDAD']
     ]
 
-    model = joblib.load("D:/Proyecto_escobilla/Backend/servicios/model/model.pkl")
+    model = joblib.load("servicios/model.pkl")
     X_test = np.array([dataarray])
     prediction = model.predict(X_test).tolist()
 

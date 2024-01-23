@@ -8,6 +8,6 @@
         }
     ],
     "env":{
-        "FLASK_APP_BDA":"production"
+        "MONGO_URL":"production"
     }
 }
